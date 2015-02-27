@@ -1,0 +1,47 @@
+{
+    "name": "grunt-fbc",
+    "description": "Run fbc from command line",
+    "version": "0.1.0",
+    "homepage": "https://github.com/kcauchy/grunt-fbc",
+    "author": {
+        "name": "Karl Cauchy",
+        "email": "karlcauchy@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/karl/grunt-fbc.git"
+    },
+    "bugs": {
+        "url": "https://github.com/karl/grunt-fbc/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/karl/grunt-fbc/blob/master/LICENSE-MIT"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "repository": "https://github.com/kcauchy/grunt-fbc",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-clean": "^0.5.0",
+        "grunt-contrib-jshint": "^0.9.2",
+        "grunt-contrib-nodeunit": "^0.3.3",
+        "grunt-update-readme": "^0.1.0"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.5"
+    },
+    "keywords": [
+        "gruntplugin"
+    ],
+    "dependencies": {
+        "fb-compiler": "^1.0.2"
+    },
+    "readme": "# grunt-fbc\n\n> Rum fb-compiler for grunt-cli.\n\n## Getting Started\nThis plugin requires Grunt `~0.4.5`\n\nIf you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-fbc --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks('grunt-fbc');\n```\n\n## The \"fbc\" task\n\n### Overview\nIn your project's Gruntfile, add a section named `fbc` to the data object passed into `grunt.initConfig()`.\n\n```js\ngrunt.initConfig({\n  fbc: {\n    targetA: {\n      argv: [\n        'fb-core',  //Will be understood as 'fb/core.jade' or 'fb/core.html'\n        'path/to/fb-banner',  //Will be understood as 'path/to/fb-banner.jade' direcly\n        // More files\n      ],\n      options: {\n        external: 'default.json', //External variables\n        archive: true, // Create archives\n        path: 'first/search/path:second/search/path', //Use ; instead on windows        // More options see \"fbc --help\"\n        // All of them are available.\n      }\n    },\n    // Other targets\n  },\n});\n```\n\n"
+}

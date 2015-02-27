@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en"
+        xmlns:fb="http://fast-blog.com/v1")
+    head
+        fb:frame(declare="fb.banner")
+            meta(charset="utf-8")
+            meta(http-equiv="X-UA-Compatible" content="IE=edge")
+            meta(name="viewport" content="width-device-width, initial-scale=1")
+
+        // Include the basic frame of fast-blog
+        fb:frame#fb-core
+
+        fb:frame(declare="fb.banner")
+            link(rel="stylesheet" type="text/css" href="css/theme.css")
+
+    body
+        fb:frame(declare="fb.banner")
+            nav(class="navbar navbar-default navbar-static-top navbar-custom"
+                role="navigation")
+                div(class="container")
+                    div(class="navbar-header")
+                        button(type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#navbar")
+                            span(class="sr-only")
+                                Toggle navigatioin
+                            span(class="icon-bar")
+                            span(class="icon-bar")
+                            span(class="icon-bar")
+                        a(class="navbar-brand" href="#!") &lt;
+                        a(class="navbar-brand" href="#") d
+
+                    div(id="navbar" class="navbar-collapse collapse nav")
+                        ul(class="nav navbar-nav")
+                            li(class="active")
+                                a(href="#") Home
+
+                        ul(class="nav nvabar-nav navbar-right")
+                            li
+                                a(href="#" class="current") Next
+
+        //Declaring the fast-blog banner space
+        fb:frame#fb-core
+
+        fb:frame(declare="fb.banner")
+            script(type="text/javascript" src="js/fast-blog.js")

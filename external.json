@@ -1,0 +1,20 @@
+{
+    "fb" : {
+        "core": {
+            "style": {
+                "bootstrap": {
+                    "core": "Hello World!",
+                    "theme": "Hello World! bootstrap theme."
+                },
+                "theme": "Hello World! theme"
+            },
+            "js": {
+                "jquery": "jquery",
+                "bootstrap": "bootstrap",
+                "fb": {
+                    "core": "Hello world"
+                }
+            }
+        }
+    }
+}

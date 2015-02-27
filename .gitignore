@@ -1,0 +1,16 @@
+build
+dist
+node_modules
+
+*~
+*.swp
+*.html
+*.frame
+*.tgz
+*.tar.gz
+
+/.idea
+/doc
+
+*.frame.gz
+*.log

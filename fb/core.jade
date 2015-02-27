@@ -1,0 +1,24 @@
+doctype html
+html(lang="en", xmlns:fb="http://fast-blog.com/v1")
+    head
+        fb:frame(declare="fb-core")
+            if !fb.core.customStyle
+                link(rel="stylesheet" type="text/css" href="$(fb.core.nprogress.theme)")
+                link(rel="stylesheet" type="text/css" href="$(fb.core.bootstrap.css)")
+                //-link(rel="stylesheet" type="text/css" href="$(fb.core.bootstrap.theme)")
+                link(rel="stylesheet" type="text/css" href="$(fb.core.bootflat.theme)")
+            else
+                fb:export content="$(fb.core.style.custom)"
+
+    body
+        fb:frame(declare="fb-core")
+            if !fb.core.customStyle
+                script(type="text/javascript" src="$(fb.core.jquery.js)")
+                script(type="text/javascript" src="$(fb.core.jquery.js)")
+                script(type="text/javascript" src="$(fb.core.nprogress.js)")
+                script(type="text/javascript" src="$(fb.core.bootstrap.js)")
+                script(type="text/javascript" src="$(fb.core.bootflat.js[0])")
+                script(type="text/javascript" src="$(fb.core.bootflat.js[1])")
+                script(type="text/javascript" src="$(fb.core.bootflat.js[2])")
+            else
+                fb:export content="$(fb.core.js.custom)"

@@ -1,0 +1,24 @@
+{
+    "fb" : {
+        "core": {
+            "jquery": { "js": "js/jquery-2.1.1.min.js"},
+
+            "nprogress": {
+                "theme":  "css/nprogress.css",
+                "js": "js/nprogress.js"
+            },
+            "bootstrap": {
+                "js": "js/bootstrap.min.js",
+                "css": "css/bootstrap.min.css",
+                "theme": "css/bootstrap-theme.min.css"
+            },
+
+            "bootflat":{
+                "js": ["js/icheck.min.js", "js/jquery.fs.selecter.min.js", "js/jquery.fs.stepper.min.js"],
+                "theme": "css/bootflat.min.css"
+            },
+
+            "theme": "Hello World! theme"
+        }
+    }
+}
