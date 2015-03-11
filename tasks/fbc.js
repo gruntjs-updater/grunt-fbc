@@ -24,11 +24,15 @@ module.exports = function(grunt) {
 	util.setConfig(options);
 	util.updateConfig();
 
-	if(util.bStdInOut) {
-		util.compileStdio();
-	} else {
-		util.compileAll();
-        }
+	try{
+		if(util.bStdInOut) {
+			util.compileStdio();
+		} else {
+			util.compileAll();
+		}
+	} catch(e){
+		console.log("" + e + "\n" + util.getDebugStackString());
+	}
   });
 
 };

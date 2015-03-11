@@ -1,7 +1,7 @@
 {
     "name": "grunt-fbc",
     "description": "Run fbc from command line",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/kcauchy/grunt-fbc",
     "author": {
         "name": "Karl Cauchy",
