@@ -7,10 +7,7 @@
         "name": "Karl Cauchy",
         "email": "karlcauchy@gmail.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/karl/grunt-fbc.git"
-    },
+    "repository": "https://github.com/kcauchy/grunt-fbc",
     "bugs": {
         "url": "https://github.com/karl/grunt-fbc/issues"
     },
@@ -26,7 +23,6 @@
     "scripts": {
         "test": "grunt test"
     },
-    "repository": "https://github.com/kcauchy/grunt-fbc",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-clean": "^0.5.0",
@@ -35,7 +31,7 @@
         "grunt-update-readme": "^0.1.0"
     },
     "peerDependencies": {
-        "grunt": "~0.4.5"
+        "grunt": ">=0.4.0"
     },
     "keywords": [
         "gruntplugin"
